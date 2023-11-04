@@ -41,25 +41,40 @@ expand.addEventListener("click", () => {
 //         }
 //     }
 // }
+let checkBtn = 0;
+function del(text, i) {
+    return text.slice(0, (operationTab.value.length - i))
+}
 let keyBind = ""
 let evalText = ""
-window.addEventListener("keydown",(e)=>{
+window.addEventListener("keydown", (e) => {
     keyBind = e.key;
     evalText += keyBind
-    operationTab.value=evalText.replace("Shift","");   
+    console.log(evalText)
+    const replObj = {
+        Shift: "",
+        CapsLock: "",
+        Backspace: "",
+        Enter: ""
+
+    }
+    evalText = evalText.replace(/Shift|CapsLock|Backspace|Enter/gi, function (obj) {
+        return replObj[obj];
+    })
+    operationTab.value += evalText;
 })
 
 
 result.value = "0";
 button.forEach(singleButton => {
-    
+
     singleButton.addEventListener("click", () => {
 
         if (singleButton.innerText !== "=" & singleButton.innerText !== "Sci" & singleButton.innerText !== "Mech") {
 
             operationTab.value += singleButton.innerText;
-            operationTab.value += keyBind;
-            
+
+
 
 
 
@@ -67,27 +82,27 @@ button.forEach(singleButton => {
                 operationTab.value = ""
                 result.value = "0";
             }
-            if (singleButton.innerHTML === backspace.innerText | keyBind === "Backspace" ) {
-                operationTab.value = operationTab.value.slice(0, (operationTab.value.length - 2))
+            if (singleButton.innerHTML === backspace.innerText | keyBind === "Backspace") {
+                operationTab.value = del(operationTab.value, 2);
             }
 
             if (singleButton.innerText === power.innerText) {
 
-                operationTab.value = operationTab.value.slice(0, (operationTab.value.length - 1)) + "**"
+                operationTab.value = del(operationTab.value, 1) + "**"
             }
 
         }
 
-        if (singleButton.innerText === "=" | keyBind==="=") {
-            submit.classList.toggle("equal")
+        if (singleButton.innerText === "=" | keyBind === "=") {
+            checkBtn += 1;
             try {
                 result.value = eval(operationTab.value).toFixed(2);
-                submit.addEventListener("click",function(){
-                    if(!submit.classList.contains("equal")){
-                        operationTab.value = result.value;
-                    }
-                })
-           } catch (error) {
+
+                if (checkBtn % 2 === 0) {
+                    operationTab.value = result.value;
+                }
+
+            } catch (error) {
 
                 operationTab.value = "";
                 result.value = "0";

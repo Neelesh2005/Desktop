@@ -41,22 +41,33 @@ expand.addEventListener("click", () => {
 //         }
 //     }
 // }
+let keyBind = ""
+let evalText = ""
+window.addEventListener("keydown",(e)=>{
+    keyBind = e.key;
+    evalText += keyBind
+    operationTab.value=evalText.replace("Shift","");   
+})
 
 
 result.value = "0";
 button.forEach(singleButton => {
+    
     singleButton.addEventListener("click", () => {
 
         if (singleButton.innerText !== "=" & singleButton.innerText !== "Sci" & singleButton.innerText !== "Mech") {
 
             operationTab.value += singleButton.innerText;
+            operationTab.value += keyBind;
+            
+
 
 
             if (singleButton.innerText === "AC") {
                 operationTab.value = ""
                 result.value = "0";
             }
-            if (singleButton.innerHTML === backspace.innerText) {
+            if (singleButton.innerHTML === backspace.innerText | keyBind === "Backspace" ) {
                 operationTab.value = operationTab.value.slice(0, (operationTab.value.length - 2))
             }
 
@@ -67,7 +78,7 @@ button.forEach(singleButton => {
 
         }
 
-        if (singleButton.innerText === "=") {
+        if (singleButton.innerText === "=" | keyBind==="=") {
             submit.classList.toggle("equal")
             try {
                 result.value = eval(operationTab.value).toFixed(2);

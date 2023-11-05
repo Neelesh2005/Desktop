@@ -196,10 +196,11 @@ button:hover {
         opacity:0.65;
     }
     .appear{
-        display:none;
+        display:grid;
     }
     .shift{
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
+        grid-template-rows:7% 1fr;
     }
     
 }

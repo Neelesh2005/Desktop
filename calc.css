@@ -183,6 +183,9 @@ button:hover {
         height: 300px;
         grid-template-columns: 1fr;
     }
+    .operation,.result{
+        font-size: medium;
+    }
     .expand{
         opacity:0.65;
     }

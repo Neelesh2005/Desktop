@@ -107,7 +107,7 @@ button.forEach(singleButton => {
 
             try {
                 result.value = eval(operationTab.value).toFixed(2);
-                
+                operationTab.value = result.value
                 
 
             } catch (error) {

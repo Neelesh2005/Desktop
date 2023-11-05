@@ -14,7 +14,7 @@ expand.addEventListener("click", () => {
     if (expand.innerText === "S") {
         if(body.style.width <= "576px"){
             expand.innerHTML="S";
-            expand.style.opacity = "0.65";
+            
             
         }else{expand.innerHTML = "M"}
         

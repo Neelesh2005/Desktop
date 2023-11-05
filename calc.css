@@ -201,9 +201,7 @@ button:hover {
         opacity:0.65;
     }
     
-    .shift{
-        grid-template-rows:15% 1fr;
-    }
+    
     .hidden{
         display: none;
     }

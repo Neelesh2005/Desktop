@@ -190,6 +190,7 @@ button:hover {
         width: 70%;
         height: 300px;
         grid-template-columns: 1fr;
+        grid-template-rows: 5% 1fr;
     }
     .operation,.result{
         font-size: x-large;
@@ -205,7 +206,7 @@ button:hover {
     .appear{
         
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 1fr;
+        grid-template-rows:1fr;
     }
     .appear button{
         width:eval(1fr/5);

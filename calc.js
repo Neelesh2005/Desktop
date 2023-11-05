@@ -115,9 +115,9 @@ button.forEach(singleButton => {
             } catch (error) {
 
                 operationTab.value = "";
-                
-                alert("Error Try Again!!")
                 result.value = "0"
+                alert("Error Try Again!!")
+                
 
             }
         }

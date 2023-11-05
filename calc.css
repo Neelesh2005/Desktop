@@ -186,7 +186,7 @@ button:hover {
         grid-template-columns: 1fr;
     }
     .operation,.result{
-        font-size: large;
+        font-size: x-large;
         
     }
     .container{

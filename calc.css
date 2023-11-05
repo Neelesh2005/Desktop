@@ -168,6 +168,9 @@ button:hover {
         width: 60%;
         height : 400px 
     }
+    .operation,.result{
+        font-size: x-large;
+    }
     .container{
         width: 60%;
         box-sizing: border-box;

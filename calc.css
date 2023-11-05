@@ -98,12 +98,7 @@ button:hover {
 
 }
 
-.subcontainer:nth-of-type(1) {
 
-    grid-template-columns: 1fr;
-
-
-}
 
 .item {
     display: flex;
@@ -135,6 +130,7 @@ button:hover {
 
 .hidden {
     display: none;
+    grid-template-columns: 1fr;
     opacity: 0;
     transition: 800ms opacity ease-in-out;
 }

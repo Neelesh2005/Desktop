@@ -139,7 +139,7 @@ button:hover {
 }
 
 .appear {
-    display: grid block;
+    display: grid;
     transition: 800ms display ease-in-out;
 }
 
@@ -201,7 +201,10 @@ button:hover {
     
     .appear{
         display: grid;
-        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: repeat(5,1fr);
+    }
+    .appear button{
+        width:eval(1fr/5);
     }
     .shift{
         grid-template-columns:1fr;

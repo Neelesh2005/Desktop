@@ -106,15 +106,17 @@ button.forEach(singleButton => {
             
 
             try {
-                result.value = eval(operationTab.value).toFixed(2);
-                operationTab.value = result.value
+                
+                result.value = eval(operationTab.value).tofixed(2);
+                
                 
 
             } catch (error) {
 
                 operationTab.value = "";
-                result.value = "0";
+                
                 alert("Error Try Again!!")
+                result.value = "0"
 
             }
         }

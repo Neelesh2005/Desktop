@@ -145,6 +145,7 @@ button:hover {
 @media(max-width:1000px) and (min-width:768px){
     main{
         width: 70%;
+        height : 550px
     }
     .container{
         width: 60%;
@@ -156,6 +157,7 @@ button:hover {
     }
     main{
         width: 70%;
+        height : 400px 
     }
     .container{
         width: 60%;
@@ -172,6 +174,7 @@ button:hover {
     }
     main{
         width: 70%;
+        height: 300px;
         grid-template-columns: 1fr;
     }
     .expand{

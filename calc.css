@@ -203,5 +203,17 @@ button:hover {
         opacity:0.65;
     }
     
-   
+    .appear{
+        
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows:1fr;
+    }
+    .appear button{
+        width:eval(1fr/5);
+    }
+    .shift{
+        grid-template-columns:1fr;
+        grid-template-rows:15% 1fr;
+    }
+    
 }

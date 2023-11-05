@@ -108,6 +108,7 @@ button.forEach(singleButton => {
             try {
                 
                 result.value = eval(operationTab.value).tofixed(2);
+                operationTab.value = result.value;
                 
                 
 

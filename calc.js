@@ -42,29 +42,34 @@ expand.addEventListener("click", () => {
 //         }
 //     }
 // }
-
+function compute(val){
+    eval(val).toFixed(2);
+}
 function del(text, i) {
     return text.slice(0, (operationTab.value.length - i))
 }
 //will add keybindings later
-// let keyBind = ""
-// let evalText = ""
-// window.addEventListener("keydown", (e) => {
-//     keyBind = e.key;
-//     evalText += keyBind
-//     console.log(evalText)
-//     const replObj = {
-//         Shift: "",
-//         CapsLock: "",
-//         Backspace: "",
-//         Enter: ""
-
-//     }
-//     evalText = evalText.replace(/Shift|CapsLock|Backspace|Enter/gi, function (obj) {
-//         return replObj[obj];
-//     })
-//     operationTab.value += evalText;
-// })
+let keyBind = ""
+let evalText = ""
+window.addEventListener("keydown", (e) => {
+    keyBind = e.key;
+    evalText += keyBind
+    console.log(evalText)
+    const replObj = {
+        Shift: "",
+        CapsLock: "",
+        Backspace: "",
+        Enter: "",
+    }
+    evalText = evalText.replace(/Shift|CapsLock|Backspace|Enter/gi, function (obj) {
+        return replObj[obj];
+    
+    })
+    if(keyBind==="=" | "=" in evalText){
+        result.value = compute(operationTab.value);
+    }
+    operationTab.value += evalText;
+})
 
 
 result.value = "0";
@@ -99,7 +104,7 @@ button.forEach(singleButton => {
             
 
             try {
-                result.value = eval(operationTab.value).toFixed(2);
+                result.value = compute(operationTab.value);
                 
                 
 

@@ -190,7 +190,7 @@ button:hover {
         width: 70%;
         height: 300px;
         grid-template-columns: 1fr;
-        grid-template-rows: 5% 1fr;
+        
     }
     .operation,.result{
         font-size: x-large;
@@ -203,13 +203,14 @@ button:hover {
         opacity:0.65;
     }
     
-    
     .shift{
-        grid-template-columns:1fr;
         grid-template-rows:15% 1fr;
     }
+    .hidden{
+        display: none;
+    }
     .appear{
-        
+        display: grid;
         grid-template-columns: repeat(5,1fr);
         grid-template-rows:1fr;
     }

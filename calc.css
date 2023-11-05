@@ -163,8 +163,7 @@ button:hover {
     
     
     
-
-    
+  
     
 }
 @media (max-width:576px){
@@ -173,6 +172,9 @@ button:hover {
     }
     main{
         width: 70%;
+    }
+    .appear{
+        display:none;
     }
     
 }

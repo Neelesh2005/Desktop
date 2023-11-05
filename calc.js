@@ -11,12 +11,12 @@ const main = document.querySelector("main");
 const power = document.querySelector(".power");
 
 expand.addEventListener("click", () => {
-    if (expand.innerText === "Sci") {
-        expand.innerHTML = "Mech"
+    if (expand.innerText === "S") {
+        expand.innerHTML = "M"
 
     }
 
-    else { expand.innerHTML = "Sci" }
+    else { expand.innerHTML = "S" }
     hidden.classList.toggle("appear");
     main.classList.toggle("shift")
 

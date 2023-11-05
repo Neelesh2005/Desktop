@@ -108,7 +108,7 @@ button:hover {
     font-size: x-large;
     text-align: center;
     background-color: #474b6b;
-    border-radius: 5px;
+    border-radius: 10%;
 }
 
 
@@ -120,6 +120,7 @@ button:hover {
 
 .span_2_rows {
     grid-area: span 2;
+    border-radius: 5%;
 
 
 }

@@ -203,6 +203,11 @@ button:hover {
         opacity:0.65;
     }
     
+    
+    .shift{
+        grid-template-columns:1fr;
+        grid-template-rows:15% 1fr;
+    }
     .appear{
         
         grid-template-columns: repeat(5,1fr);
@@ -210,10 +215,6 @@ button:hover {
     }
     .appear button{
         width:eval(1fr/5);
-    }
-    .shift{
-        grid-template-columns:1fr;
-        grid-template-rows:15% 1fr;
     }
     
 }

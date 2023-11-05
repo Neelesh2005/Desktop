@@ -12,11 +12,7 @@ const power = document.querySelector(".power");
 
 expand.addEventListener("click", () => {
     if (expand.innerText === "S") {
-        if(body.style.width <= "576px"){
-            expand.innerHTML="S";
-            
-            
-        }else{expand.innerHTML = "M"}
+        expand.innerHTML = "M"
         
 
     }

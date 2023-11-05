@@ -167,7 +167,9 @@ button:hover {
     }
     .container{
         width: 60%;
+        box-sizing: border-box;
     }
+    
     
     
     
@@ -185,6 +187,7 @@ button:hover {
     }
     .operation,.result{
         font-size: medium;
+        
     }
     .expand{
         opacity:0.65;

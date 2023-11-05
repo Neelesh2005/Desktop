@@ -175,7 +175,10 @@ button:hover {
         grid-template-columns: 1fr;
     }
     .appear{
-        opacity: 0;
+        display:none;
+    }
+    .shift{
+        grid-template-columns: 1fr;
     }
     
 }

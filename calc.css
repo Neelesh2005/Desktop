@@ -45,7 +45,7 @@ header {
     border: 2px solid #131313;
     background-color: #131313;
     text-align: center;
-    height: 4.5vh;
+    height: 5.5vh;
     color: white;
     font-size: xx-large;
     line-height: 2;
@@ -126,7 +126,7 @@ button:hover {
 }
 
 .io_part {
-    margin: 1% 0 2.5% 0;
+    margin: 1.5% 0 2.5% 0;
 }
 
 .hidden {

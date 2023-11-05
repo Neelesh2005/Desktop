@@ -204,7 +204,7 @@ button:hover {
     
     .shift{
         grid-template-columns: 100%;
-        grid-template-rows: 10% 1fr;
+        grid-template-rows: 18% 1fr;
     }
     .hidden{
         display: none;

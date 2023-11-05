@@ -1,4 +1,4 @@
-
+const body = document.querySelector("body");
 const button = document.querySelectorAll('button');
 const submit = document.querySelector('.submit');
 const operationTab = document.querySelector('.operation');
@@ -12,9 +12,15 @@ const power = document.querySelector(".power");
 
 expand.addEventListener("click", () => {
     if (expand.innerText === "S") {
-        expand.innerHTML = "M"
+        if(body.style.width <= "576px"){
+            expand.innerHTML="S";
+            expand.style.opacity = "0.65";
+            
+        }else{expand.innerHTML = "M"}
+        
 
     }
+    
 
     else { expand.innerHTML = "S" }
     hidden.classList.toggle("appear");

@@ -135,12 +135,14 @@ button:hover {
 
 .hidden {
     display: none;
-    transition: 800ms display ease-in-out;
+    opacity: 0;
+    transition: 800ms opacity ease-in-out;
 }
 
 .appear {
     display: grid;
-    transition: 800ms display ease-in-out;
+    opacity: 1;
+    transition: 800ms opacity ease-in-out;
 }
 
 .operator {

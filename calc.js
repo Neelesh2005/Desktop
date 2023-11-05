@@ -71,7 +71,7 @@ button.forEach(singleButton => {
 
     singleButton.addEventListener("click", () => {
 
-        if (singleButton.innerText !== "=" & singleButton.innerText !== "Sci" & singleButton.innerText !== "Mech") {
+        if (singleButton.innerText !== "=" & singleButton.innerText !== "S" & singleButton.innerText !== "M") {
 
             operationTab.value += singleButton.innerText;
 

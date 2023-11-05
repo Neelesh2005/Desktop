@@ -63,7 +63,7 @@ header {
 main {
 
     margin: 0 auto;
-    height: 600px;
+    height: 550px;
     width:50%;
     display: grid;
     grid-template-columns: 1fr;
@@ -146,7 +146,7 @@ button:hover {
 @media(max-width:1000px) and (min-width:768px){
     main{
         width: 60%;
-        height : 550px
+        height : 450px
     }
     .container{
         width: 60%;

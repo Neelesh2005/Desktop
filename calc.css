@@ -172,9 +172,10 @@ button:hover {
     }
     main{
         width: 70%;
+        grid-template-columns: 1fr;
     }
     .appear{
-        display:none;
+        opacity: 0;
     }
     
 }

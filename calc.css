@@ -65,6 +65,7 @@ main {
     margin: 0 auto;
     height: 550px;
     width:50%;
+    transition: 200ms width cubic-bezier(0.19, 1, 0.22, 1);
     display: grid;
     grid-template-columns: 1fr;
     transition: 1000ms grid-template-columns cubic-bezier(0.215, 0.610, 0.355, 1);
@@ -146,6 +147,7 @@ button:hover {
 @media(max-width:1000px) and (min-width:768px){
     main{
         width: 45%;
+
         height : 450px
     }
     .container{

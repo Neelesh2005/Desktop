@@ -63,7 +63,7 @@ main {
 
     margin: 0 auto;
     height: 600px;
-    width:70%;
+    width:50%;
     display: grid;
     grid-template-columns: 1fr;
     transition: 1000ms grid-template-columns cubic-bezier(0.215, 0.610, 0.355, 1);

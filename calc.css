@@ -187,7 +187,8 @@ button:hover {
     main{
         width: 70%;
         height: 400px;
-        grid-template-columns: 1fr;
+        
+        
         
     }
     .operation,.result{
@@ -201,14 +202,17 @@ button:hover {
         opacity:0.65;
     }
     
-    
+    .shift{
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 1fr;
+    }
     .hidden{
         display: none;
     }
     .appear{
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows:1fr;
+        grid-template-rows:100%;
     }
     .appear button{
         width:eval(1fr/5);

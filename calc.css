@@ -195,10 +195,10 @@ button:hover {
     .expand{
         opacity:0.65;
     }
-    .hidden{
-        display:grid;
+    
+    .appear{
+        display: grid;
         grid-template-columns: repeat(5,1fr);
-        
     }
     .shift{
         grid-template-columns:1fr;

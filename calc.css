@@ -53,7 +53,9 @@ header {
     font-weight: bold;
 }
 
-
+.operation{
+    margin-bottom: 0.3%;
+}
 
 .result {
     color: rgba(25, 165, 53, 0.87)
@@ -126,7 +128,7 @@ button:hover {
 }
 
 .io_part {
-    margin: 1.5% 0 2.5% 0;
+    margin: 2.5% 0 2.5% 0;
 }
 
 .hidden {

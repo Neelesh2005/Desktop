@@ -106,12 +106,14 @@ button.forEach(singleButton => {
             
 
             try {
-                if(!operationTab.value.contains("/0")){
+                if(!operationTab.value.includes("/0")){
                 result.value = eval(operationTab.value).toFixed(2);
                 operationTab.value = result.value;}
                 else{
-                    operationTab.value="Zero Div Error";
+                    alert("Error!!");
                     result.value = "0";
+                    operationTab.value="";
+
                 }
                 
                 
